@@ -1,0 +1,13 @@
+public class CalculateRotation {
+  static int shiftedDiff(String first, String second){
+    int count = 0;
+        while (!first.equals(second) && count != first.length()) {
+            second = second.substring(1) + second.substring(0,1);
+            count++;
+        }
+        if(count == first.length()){
+            count = -1;
+        }
+    return count; 
+  }
+}
