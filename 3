@@ -1,0 +1,10 @@
+public class Solution {
+  public static int zeros(int n) {
+    int z = 0;
+        double kMax = Math.log(n) / Math.log(5);
+        for (int i = 1; i < kMax; i++) {
+            z += n/Math.pow(5, i);
+        }
+        return z;
+  }
+}
